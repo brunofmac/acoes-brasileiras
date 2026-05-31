@@ -37,3 +37,11 @@ Requires Python 3.10+ (uses `list[str]` type hint syntax). No pinned version in 
 ## UI language
 
 All UI text and comments are in Portuguese.
+
+## GitHub repository
+
+Repository: https://github.com/brunofmac/acoes-brasileiras
+
+Every file edit triggers an automatic `git commit` + `git push` via a PostToolUse hook in `.claude/settings.json`. The commit message is `auto: <filename>`. The hook is async — it runs in the background and does not block Claude.
+
+The `gh` CLI is installed at `~/bin/gh` (not in PATH by default) and authenticated as `brunofmac`. To use it manually: `~/bin/gh <command>`.
